@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+
+        .download-btn, .video-btn {
+            padding: 10px 20px;
+            background-color: #5e3e9e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block; /* Changed to block */
+            margin: 20px auto; /* Center the buttons */
+            text-align: center; /* Center text inside buttons */
+            width: fit-content; /* Adjust width to content */
+        }
+
+        .download-btn:hover, .video-btn:hover {
+            background-color: #21a1f1;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto;
+            position: fixed;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: #f0f0f0;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .content-wrapper {
+            margin-left: 270px;
+            width: calc(100% - 270px);
+            height: 100vh;
+            overflow-y: auto;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .content h1 {
+            margin-top: 0;
+            color: #c5c4f5;
+        }
+
+        /* Center video and add spacing */
+        .video-container {
+            text-align: center;
+            margin-top: 20px; /* Space above the video */
+        }
+
+        .content h2, .content h3 {
+            color: #c5c4f5;
+        }
+
+        .content ul {
+            list-style-type: square;
+            margin-left: 25px;
+        }
+
+        .content ul li {
+            margin-bottom: 12px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Charlotte Sandoli</h2>
+        <a href="index.html">Home</a>
+        <a href="project1.html">Guitar Project (Java)</a>
+        <a href="project2.html">Animal Project (SWIFT)</a>
+        <a href="aboutMe.html">About Me</a>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>Interactive Music School Platform</h1>
+            <p>This project aims to create an interactive, user-friendly platform designed for a school of music. The application will be built using Java JavaFX, HTML, and CSS.</p>
+
+
+            <a href="structureDiagram.pdf" download="structureDiagram.pdf" class="download-btn">Download Structure Diagram</a>
+
+            <div class="video-container">
+                <a href="introduction.mp4" download="introduction.mp4" class="video-btn">Download Introduction Video</a>
+            </div>
+
+            <h2>Key Features</h2>
+
+            <h3>Song Searcher</h3>
+            <ul>
+                <li>Allows students to search for songs in the school's file registry by title, artist, genre, or instrument.</li>
+                <li>Displays search results with relevant information, including song details, artist, and instrument.</li>
+            </ul>
+
+            <h3>Tablature Storage</h3>
+            <ul>
+                <li>Provides a secure storage system, allowing students to upload and manage their tablatures.</li>
+                <li>Enables collaborative work by allowing students to share tablatures with others.</li>
+            </ul>
+
+            <h3>Interactive Learning Section</h3>
+            <ul>
+                <li>Offers in-depth visual guides and diagrams illustrating the workings of various instruments.</li>
+            </ul>
+
+            <h3>Fretboard Tablature Editor</h3>
+            <ul>
+                <li>Enables students to create and edit tablatures directly on a virtual fretboard.</li>
+                <li>Allows students to visualize and practice tablatures in real-time.</li>
+            </ul>
+
+            <h2>Interactivity</h2>
+            <p>The platform is completely interactive, allowing students to:</p>
+            <ul>
+                <li>Search for songs with ease.</li>
+                <li>Upload, manage, and share their tablatures.</li>
+                <li>Explore interactive diagrams and tutorials.</li>
+                <li>Create and edit tablatures using the virtual fretboard editor.</li>
+            </ul>
+
+            <h2>Technical Implementation</h2>
+            <ul>
+                <li>Java (using IntelliJ)</li>
+                <li>JavaFX</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte Sandoli's Portfolio</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center;     /* Center the content vertically */
+            padding: 20px;
+        }
+
+        .content-inner {
+            text-align: center; /* Ensure text inside content is centered */
+        }
+
+        .download-btn {
+            padding: 10px 20px;
+            background-color: #5e3e9e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .download-btn:hover {
+            background-color: #21a1f1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Charlotte Sandoli</h2>
+            <a href="index.html">Home</a>
+            <a href="project1.html">Guitar Project (Java)</a>
+            <a href="project2.html">Animal Project (SWIFT)</a>
+            <a href="aboutMe.html">About Me</a>
+        </div>
+        <div class="content">
+            <div class="content-inner">
+                <h1>Charlotte Sandoli's Portfolio</h1>
+                <p>Rio de Janeiro, Brazil</p>
+                <p>FYE Engineering - Purdue University, West Lafayette</p>
+
+                <a href="resume.pdf" download="Charlotte_Sandoli_Resume.pdf" class="download-btn">Download My Resume</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
